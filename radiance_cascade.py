@@ -59,6 +59,7 @@ def apply_radiance_cascades(rgb_grid, iterations=5, decay=0.9):
     return enhanced_grid
 
 def main():
+    plt.ioff() #Added this line
     grid = generate_arc_data()
     rgb_grid = visualize_grid(grid)
     enhanced_grid = apply_radiance_cascades(rgb_grid)
